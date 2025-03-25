@@ -5,6 +5,7 @@ const student = {
 };
 
 // Function to get all keys from an object
+// Add getKeys method to Object prototype
 Object.prototype.getKeys = function() {
     return Object.keys(this);
 };
@@ -12,3 +13,4 @@ Object.prototype.getKeys = function() {
 // Example usage
 const myObj = { name: "John", age: 30, city: "New York" };
 console.log(myObj.getKeys()); // Output: ["name", "age", "city"]
+

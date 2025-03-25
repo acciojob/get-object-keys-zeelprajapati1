@@ -1,37 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Object Keys</title>
+	<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <h2>Get Object Keys Example</h2>
-    <button onclick="showKeys()">Get Keys</button>
-    <p id="output"></p>
+	<!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js">
+</script>
 
-    <script>
-        // Create the student object
-        const student = {
-            name: "John",
-            age: 21,
-            course: "Computer Science"
-        };
-
-        // Function to get all keys from the object
-        function getKeys(obj) {
-            return Object.keys(obj);
-        }
-
-        // Function to display keys in the HTML page
-        function showKeys() {
-            const keys = getKeys(student);
-            document.getElementById("output").innerText = "Keys: " + keys.join(", ");
-        }
-
-        // Exposing variables to the window for testing
-        window.student = student;
-        window.getKeys = getKeys;
-    </script>
 </body>
+
 </html>
